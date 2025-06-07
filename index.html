@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PhishScan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="theme.js"></script>
+    <script src="phishlist.js"></script>
+    <script src="phishmots.js"></script>
+    <script src="analyser.js"></script>
+</head>
+<body>
+    <div class="c1">
+        <img src="logo.png" alt="logo" width="400">
+        <p><em>Welcome to <strong>PhishScan</strong> a simple tool that helps you detect suspicious links. Just paste an URL and we’ll scan it for common phishing signs.<br> Stay safe online!</em></p><br>
+        <label>Enter your Link down below</label>
+        <input type="text" id="url" placeholder="https://example.com"><br><br>
+        <button onclick="Analyser()">Analyze</button>
+    </div><br>
+    <div class="c2">
+        <label class="th" for="remplacer">
+            <input type="checkbox" id="remplacer">
+            <div class="slider round"></div>
+        </label>
+        <label>Dark Theme</label>
+    </div>
+    <p id="resultat"></p>
+</body>
+</html>
